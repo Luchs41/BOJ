@@ -1,6 +1,6 @@
 # BOJ 2667
 # 0과 1로 이루어진 2차원 배열을 입력받아, 1끼리 인접한 부분을 단지로 구분하여 총 단지의 수와 단지 내 1의 수를 출력한다. 
-
+# 2차원 배열을 돌면서 1을 발견하면 해당 위치부터 BFS, 인접한 1을 모두 찾은 후 찾은 1의 개수를 danji 리스트 내에 저장
 from collections import deque
 def BFS(graph, a, b) : 
     queue = deque()
