@@ -7,4 +7,14 @@ matA = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
 
 M, K = map(int, input().split())
 matB = [list(map(int, sys.stdin.readline().split())) for _ in range(M)]
+matC = [[0]*K for i in range(N)]
 
+
+for i in range(N) : 
+    for j in range(K) : 
+        for k in range(M) : 
+            matC[i][j] += matA[i][k] * matB[k][j]
+for i in matC : 
+    for j in i : 
+        print(j, end=' ')
+    print()
