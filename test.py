@@ -1,3 +1,4 @@
 # test
-print("it's just a test")
-print()
+matC = [[0]*5 for i in range(2)]
+
+print(matC)
