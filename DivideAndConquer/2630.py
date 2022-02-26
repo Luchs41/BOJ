@@ -6,7 +6,8 @@
 
 import sys
 count = [0, 0]
-
+white = 0
+blue = 0
 def check(x, y, N) : 
     global count
     global white, blue
