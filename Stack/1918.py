@@ -21,13 +21,13 @@ for char in str_in :
   if char.isalpha() == True : 
     result += char
   else : 
-    if char == '(' : 
+    if char == '(' : # '('보다 우선순위가 높은 연산자는 없으므로 바로 push
       stack.append(char)
     elif char in mulop : 
       while stack and stack[-1] in mulop : 
         result += stack.pop()
       stack.append(char)
-    elif char in addop : 
+    elif char in addop : # addop보다 우선순위가 낮은 연산자는 없으므로, 특수 케이스인 '('만 아니라면 모두 pop 후 push
       while stack and stack[-1] != '(' : 
         result += stack.pop()
       stack.append(char)
