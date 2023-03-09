@@ -1,5 +1,7 @@
 # BOJ 2263
 # inorder와 postorder의 결과물로 preorder를 출력하기
+# 후위 순회의 맨 마지막 원소 -> 최상위 루트
+# 이를 기준으로 중위 순회를 나누면, 왼쪽 서브 트리와 오른쪽 서브 트리로 나뉜다. 
 
 import sys
 input = sys.stdin.readline
